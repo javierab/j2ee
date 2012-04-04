@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+  <context-param>
+    <description>Version del sitio</description>
+    <param-name>version</param-name>
+    <param-value>woody_allen</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>Faces Servlet</servlet-name>
+    <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>header</servlet-name>
+    <servlet-class>view.header</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>footer</servlet-name>
+    <servlet-class>view.footer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Faces Servlet</servlet-name>
+    <url-pattern>/faces/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>header</servlet-name>
+    <url-pattern>/header</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>footer</servlet-name>
+    <url-pattern>/footer</url-pattern>
+  </servlet-mapping>
+</web-app>

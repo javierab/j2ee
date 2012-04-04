@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></meta>
+        <title>index</title>
+        <script type="text/javascript">
+            var confirmar = function(){
+
+                var user = document.getElementById("User");
+                var pass = document.getElementById("Pass");
+                
+                if(user.value == "woody" && pass.value == "allen"){
+                    window.location.href = 'principal.html';
+                }
+                else{
+                    alert("Nombre de usuario o clave incorrecta");
+                }
+                
+            }
+        
+        </script>
+    </head>
+    <h1>
+        <font face="Aharoni">
+            There Is No Knowledge That Is Not Power
+        </font>
+        <img src="http://2.bp.blogspot.com/-3WzO4KqR5aE/TmTgxNHSKXI/AAAAAAAAAAM/eDlt9uWrm-o/s1600/CaseDetectiveIconDraftLarge.jpg"
+             width="150" height="100"/>
+    </h1>
+    <form name="login">
+        <label for="User">User </label><input type="text" name="User" id="User" size="20"/>
+        <label for="Pass"> Password </label><input type="password" name="Pass" id="Pass" size="20"/>
+        <input type="button" name="Send" value='Enviar'
+               onclick="confirmar()"/>
+     </form>
+</html>
