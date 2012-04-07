@@ -132,6 +132,7 @@ textarea {
   box-sizing: border-box;
 }
 body {
+  padding-top: 100px;
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
@@ -1262,12 +1263,12 @@ table {
   -moz-border-radius: 0 0 4px 0;
   border-radius: 0 0 4px 0;
 }
-.table-striped tbody tr:nth-child(odd) td,
-.table-striped tbody tr:nth-child(odd) th {
+.table-striped tbody td,
+.table-striped tbody th {
   background-color: #B07D00;
 }
-.table tbody tr:hover td,
-.table tbody tr:hover th {
+.table-striped tbody tr:hover td,
+.table-striped tbody tr:hover th {
   background-color: #BF7D00;
 }
 table .span1 {
