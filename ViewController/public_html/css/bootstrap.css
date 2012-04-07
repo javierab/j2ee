@@ -1185,12 +1185,23 @@ legend + .control-group {
   padding-left: 160px;
 }
 table {
+
   max-width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
   background-color: transparent;
 }
+
+.table-centered
+{
+  margin: 0 auto !important;
+  float: none !important;
+  text-align: center;
+}
 .table {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
   width: 100%;
   margin-bottom: 18px;
 }
@@ -1198,7 +1209,7 @@ table {
 .table td {
   padding: 8px;
   line-height: 18px;
-  text-align: left;
+  text-align: center;
   vertical-align: top;
   border-top: 1px solid #dddddd;
 }
